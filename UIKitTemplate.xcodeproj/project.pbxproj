@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		160B80DC2D6230E000845862 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 160B80DB2D6230E000845862 /* RxBlocking */; };
+		160B80DE2D6230E000845862 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 160B80DD2D6230E000845862 /* RxCocoa */; };
+		160B80E02D6230E000845862 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 160B80DF2D6230E000845862 /* RxRelay */; };
+		160B80E22D6230E000845862 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 160B80E12D6230E000845862 /* RxSwift */; };
+		160B80E42D6230E000845862 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 160B80E32D6230E000845862 /* RxTest */; };
+		160B80E72D62315D00845862 /* RxFeedback in Frameworks */ = {isa = PBXBuildFile; productRef = 160B80E62D62315D00845862 /* RxFeedback */; };
+		16E599B12D623A9C003E7AC2 /* Cartography in Frameworks */ = {isa = PBXBuildFile; productRef = 16E599B02D623A9C003E7AC2 /* Cartography */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		160B80B12D621B2B00845862 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +37,7 @@
 		160B809A2D621B2A00845862 /* UIKitTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		160B80B02D621B2B00845862 /* UIKitTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		160B80BA2D621B2B00845862 /* UIKitTemplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitTemplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16E599BD2D626316003E7AC2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -65,6 +76,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16E599B12D623A9C003E7AC2 /* Cartography in Frameworks */,
+				160B80E22D6230E000845862 /* RxSwift in Frameworks */,
+				160B80E72D62315D00845862 /* RxFeedback in Frameworks */,
+				160B80E02D6230E000845862 /* RxRelay in Frameworks */,
+				160B80DE2D6230E000845862 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				160B80E42D6230E000845862 /* RxTest in Frameworks */,
+				160B80DC2D6230E000845862 /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,9 +106,11 @@
 		160B80912D621B2A00845862 = {
 			isa = PBXGroup;
 			children = (
+				16E599BD2D626316003E7AC2 /* .gitignore */,
 				160B809C2D621B2A00845862 /* UIKitTemplate */,
 				160B80B32D621B2B00845862 /* UIKitTemplateTests */,
 				160B80BD2D621B2B00845862 /* UIKitTemplateUITests */,
+				16E599AF2D623A9C003E7AC2 /* Frameworks */,
 				160B809B2D621B2A00845862 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +123,13 @@
 				160B80BA2D621B2B00845862 /* UIKitTemplateUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		16E599AF2D623A9C003E7AC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,12 +146,18 @@
 			buildRules = (
 			);
 			dependencies = (
+				1656D53C2D62355300A31CDB /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				160B809C2D621B2A00845862 /* UIKitTemplate */,
 			);
 			name = UIKitTemplate;
 			packageProductDependencies = (
+				160B80DD2D6230E000845862 /* RxCocoa */,
+				160B80DF2D6230E000845862 /* RxRelay */,
+				160B80E12D6230E000845862 /* RxSwift */,
+				160B80E62D62315D00845862 /* RxFeedback */,
+				16E599B02D623A9C003E7AC2 /* Cartography */,
 			);
 			productName = UIKitTemplate;
 			productReference = 160B809A2D621B2A00845862 /* UIKitTemplate.app */;
@@ -148,6 +181,8 @@
 			);
 			name = UIKitTemplateTests;
 			packageProductDependencies = (
+				160B80DB2D6230E000845862 /* RxBlocking */,
+				160B80E32D6230E000845862 /* RxTest */,
 			);
 			productName = UIKitTemplateTests;
 			productReference = 160B80B02D621B2B00845862 /* UIKitTemplateTests.xctest */;
@@ -208,6 +243,12 @@
 			);
 			mainGroup = 160B80912D621B2A00845862;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				160B80DA2D6230E000845862 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				160B80E52D62315D00845862 /* XCRemoteSwiftPackageReference "RxFeedback" */,
+				160B80E82D6231C500845862 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+				1656D53A2D6234D500A31CDB /* XCRemoteSwiftPackageReference "Cartography" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 160B809B2D621B2A00845862 /* Products */;
 			projectDirPath = "";
@@ -279,6 +320,10 @@
 			target = 160B80992D621B2A00845862 /* UIKitTemplate */;
 			targetProxy = 160B80BB2D621B2B00845862 /* PBXContainerItemProxy */;
 		};
+		1656D53C2D62355300A31CDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 1656D53B2D62355300A31CDB /* SwiftLintBuildToolPlugin */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -293,7 +338,6 @@
 				INFOPLIST_FILE = UIKitTemplate/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +364,6 @@
 				INFOPLIST_FILE = UIKitTemplate/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -563,6 +606,84 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		160B80DA2D6230E000845862 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.8.0;
+			};
+		};
+		160B80E52D62315D00845862 /* XCRemoteSwiftPackageReference "RxFeedback" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/NoTests/RxFeedback.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		160B80E82D6231C500845862 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.58.2;
+			};
+		};
+		1656D53A2D6234D500A31CDB /* XCRemoteSwiftPackageReference "Cartography" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/robb/Cartography";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		160B80DB2D6230E000845862 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 160B80DA2D6230E000845862 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		160B80DD2D6230E000845862 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 160B80DA2D6230E000845862 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		160B80DF2D6230E000845862 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 160B80DA2D6230E000845862 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		160B80E12D6230E000845862 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 160B80DA2D6230E000845862 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		160B80E32D6230E000845862 /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 160B80DA2D6230E000845862 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+		160B80E62D62315D00845862 /* RxFeedback */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 160B80E52D62315D00845862 /* XCRemoteSwiftPackageReference "RxFeedback" */;
+			productName = RxFeedback;
+		};
+		1656D53B2D62355300A31CDB /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 160B80E82D6231C500845862 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+		16E599B02D623A9C003E7AC2 /* Cartography */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1656D53A2D6234D500A31CDB /* XCRemoteSwiftPackageReference "Cartography" */;
+			productName = Cartography;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 160B80922D621B2A00845862 /* Project object */;
 }
